@@ -1,0 +1,114 @@
+.saldo-content{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    background: rgb(127,111,225);
+background: linear-gradient(82deg, rgba(127,111,225,1) 0%, rgba(78,56,125,1) 98%);
+    padding: 20px;
+    color: #fff;
+}
+.saldo-content p{
+    font-weight: lighter;
+    font-size: 20px;
+}
+.saldo-content h2{
+    padding: 10px;
+    font-size: 25px;
+}
+.saldo-action{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.saldo-action input{
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+    margin: 10px;
+    font-size: 19px;
+    }
+.saldo-action button{
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(243, 243, 243);
+}
+#plus{
+    color: green;
+}
+#minus{
+    color:  red;
+}
+.empty-saldo{
+    color: #dadada;
+    text-align: center;
+    padding: 2px;
+    opacity: 0;
+    transition: .2s;
+}
+.empty-show{
+    color: #dadada;
+    text-align: center;
+    padding: 2px;
+    opacity: 1;
+    transition: .2s;
+}
+.extract-content{
+    position:relative;
+    bottom: 20px;
+    width: 100%;
+    background-color: #ececec;
+    height: 500px;
+    text-align: center;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    z-index: 3;
+    
+}
+.extract-content p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 27px;
+    padding: 20px;
+    color: #333;
+}
+.extracts{
+    overflow-x: scroll;
+    height: 70%;
+}
+#if-none{
+    font-size: 17px;
+}
+.trasition-extract{
+ 
+    display: flex;
+    border-bottom: 2px solid #9c9c9c;
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+#plus-value{
+    color: rgb(53, 124, 53);
+    font-size: 24px;
+}
+#minus-value{
+    color: rgb(151, 58, 58);
+    font-size: 24px;
+}
+#transition-data{
+    font-size: 16px;
+}
+
+

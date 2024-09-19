@@ -1,0 +1,229 @@
+.card-container {
+  height: 100%;
+}
+
+.card-card {
+  background: rgb(127, 111, 225);
+  background: linear-gradient(
+    82deg,
+    rgba(127, 111, 225, 1) 0%,
+    rgba(78, 56, 125, 1) 98%
+  );
+  width: 310px;
+  border-radius: 22px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  height: 180px;
+}
+.validade {
+  width: 100%;
+  text-align: end;
+  color: #fff;
+  font-weight: lighter;
+}
+.card-name {
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #f5f5f5;
+}
+.card-actions {
+  padding-top: 70px;
+  bottom: 50px;
+  position: relative;
+  z-index: 1;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  background-color: #ececec;
+  height: 500px;
+}
+.fatura {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.fatura input {
+  margin-bottom: 0px;
+}
+.fatura p {
+  font-weight: bold;
+}
+.fatura input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: transparent; /* Define como transparente para usar gradiente */
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.15s ease-in-out;
+}
+.fatura input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: rgb(111, 98, 197); /* Cor da linha */
+  border-radius: 5px; /* Cantos arredondados */
+}
+.fatura input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  position: relative;
+  bottom: 3px; /* Largura da bolinha */
+  height: 16px; /* Altura da bolinha */
+  background: rgb(57, 45, 133); /* Cor da bolinha */
+  cursor: pointer; /* Cursor ao passar por cima */
+  border-radius: 50%; /* Faz a bolinha ficar redonda */
+}
+.fatura input::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #460f79;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.card-transtion {
+
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  height: 1 70px;
+}
+.card-transtion button, .fatura button {
+  
+    background: rgb(127, 111, 225);
+    background: linear-gradient(
+      82deg,
+      rgba(127, 111, 225, 1) 0%,
+      rgba(78, 56, 125, 1) 98%
+    );
+  width: 140px;
+  border-radius: 11px;
+  border: none;
+  text-align: center;
+  margin: 20px 10px 20px auto;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  opacity: .7;
+  transition: .4s;
+}
+.card-transtion button:hover, .fatura button:hover{
+    opacity: 1;
+}
+.transition-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.transition-form input{
+    padding: 4px;
+    border: none;
+    height: 30px;
+    background-color: #e9e7e7;
+    border-bottom: 1px solid #722bb4;
+    
+}
+#tranfer-notification{
+  
+    transition: .2s;
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 14px;
+    color: #363636;
+}
+#false-notification{
+  
+  opacity: 0;
+  text-transform: lowercase;
+  transition: .2s;
+  text-align: center;
+  font-size: 14px;
+  color: #363636;
+}
+
+#tranfer-notification span, #false-notification span{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.card-transtion.hide, .pay-fatura.hide,.confirmation.hide, .pay-button.hide{
+  display: none;
+}
+#empty-value{
+  text-transform: uppercase;
+  padding: 5px;
+  color:rgb(88, 86, 86);
+  opacity: 0;
+  transition: .2s;
+}
+#valid-value{
+  text-transform: uppercase;
+  padding: 5px;
+  color:rgb(88, 86, 86);
+  opacity: 1;
+  transition: .2s;
+}
+#limit-value{
+  font-weight: bold;
+  opacity: 0;
+  text-transform: lowercase;
+  transition: .2s;
+  text-align: center;
+  font-size: 14px;
+  color: #b81010;
+}
+#limit-not-value{
+  font-weight: bold;
+  opacity: 1;
+  text-transform: lowercase;
+  transition: .2s;
+  text-align: center;
+  font-size: 14px;
+  color: #d61515;
+}
+.pay-fatura{
+  width: 95%;
+  margin:  0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 6px;
+}
+.pay-fatura p{
+  font-weight: bold;
+}
+.pay-fatura span{
+  color: #722bb4;
+}
+
+.pay-fatura button{
+  width: 30%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 11px;
+  border: 2px solid #722bb4;
+  background-color:#ececec;
+  color: #722bb4;
+  font-size: 17px;
+  font-weight: bold;
+}
+.pay-fatura button:hover{
+  background-color: #722bb4;
+  color: #ececec;
+  border: 2px solid #ececec;
+}
+.confirmation{
+  transition: .2s;
+  text-align: center;
+  color: #fff;
+  border-radius: 11px;
+  background-color: #722bb4;
+  margin: 10px;
+}

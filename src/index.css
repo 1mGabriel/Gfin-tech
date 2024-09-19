@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inria Sans", sans-serif;
+}
+
+body, html{
+  height: 100%;
+  position: relative;
+  background: rgb(78,65,227);
+  background: linear-gradient(187deg, rgba(78,65,227,1) 0%, rgba(38,35,77,1) 98%);
+}
